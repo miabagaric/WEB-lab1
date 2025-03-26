@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeautyShop - Web trgovina</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="scripts/data.js"></script>
+    <script defer src="scripts/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-first-row">
+                <div class="nav-left">
+                    <div class="logo">
+                        <img src="./images/logo_nobg.png" alt="BeautyShop Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="nav-second-row">
+                <div class="nav-center">
+                    <a id="current-category">Kategorije</a>
+                </div>
+
+                <div class="nav-right">
+                    <nav>
+                        <ul class="nav-r-ul">
+                            <li class="nav-r-cart"><a href="cart.html"><img src="./images/cart_icon.png" alt="Košarica">
+                                    <span id="cart-count">0</span></a></li>
+                            <li><img src="./images/search_icon.png" alt="Search Icon"></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div class="left-column">
+                <section id="categories">
+                    <div class="category-container">
+                        <!-- Kategorije će se puniti iz JS-a -->
+                    </div>
+                </section>
+
+                <section id="contact-newsletter">
+                    <h2>Kontaktirajte nas</h2>
+                    <div class="contact-info">
+                        <p>Email: info@beautyshop.com</p>
+                        <p>Telefon: +385 1 234 5678</p>
+                        <p>Adresa: Ulica Ljepote 123, 10000 Zagreb, Hrvatska</p>
+                    </div>
+                    <h2>Pretplatite se na naš newsletter</h2>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Unesite vaš email">
+                        <button>Pretplati me</button>
+                    </div>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <section id="hero">
+                    <img src="./images/store1.jpg" alt="Hero Image" class="hero-image" id="hero-image">
+                </section>
+
+                <section id="products">
+                    <div class="product-container">
+                        <!-- Proizvodi će se puniti iz JS-a -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

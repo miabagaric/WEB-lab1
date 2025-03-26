@@ -1,0 +1,23 @@
+@import url('components.css');
+@import url('layout.css');
+
+/* Reset stilova */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f5e5d4;
+    padding: 10px 20px;
+    border-bottom: 1px solid #f5e5d4;
+}
+

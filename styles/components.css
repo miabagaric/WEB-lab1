@@ -1,0 +1,210 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-first-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-center {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.nav-r-cart a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-r-ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.nav-r-cart {
+    margin-right: 20px;
+}
+
+.nav-second-row {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li img {
+    height: 24px;
+}
+
+#cart-count {
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-column {
+    width: 20%; /* Smanjena širina lijevog stupca */
+    padding-right: 20px;
+}
+
+.right-column {
+    width: 80%; /* Povećana širina desnog stupca */
+}
+
+.hero-image {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 22%; /* Margina je 1.5%, 2*1.5 = 3, 4 proizvoda je 25% - 3% */
+    margin: 1.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    position: relative; /* For positioning the cart icon */
+    transition: transform 0.3s ease;
+}
+
+.product-name{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5vw;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.product-price{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2vw;
+    font-weight:525;
+    flex-grow: 1;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.cart-icon {
+    display: none;
+    position: absolute;
+    margin-bottom: 10px;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%; /* Percentage of product width */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+}
+
+.product:hover .cart-icon {
+    display: block;
+
+}
+
+
+.add-to-cart {
+    display: none; /* Hidden by default */
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f5e5d4;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #e4d4c4;
+}
+
+.product:hover .add-to-cart {
+    display: block; /* Show button on hover */
+}
+
+.product-image{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.category-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f5e5d4;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    text-align: left;
+    font-weight: bold;
+}
+
+.category-button:hover {
+    background-color: #e4d4c4;
+}
+
+
+.quantity-badge {
+    display: none; /* Hidden by default */
+    position: absolute;
+    bottom: 20%; /* Positioned at the bottom-right corner */
+    right: 10%;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
