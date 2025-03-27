@@ -25,7 +25,7 @@
             <div class="nav-right nav-element">
                 <nav>
                     <ul class="nav-r-ul">
-                        <li class="nav-r-cart"><img src="./images/cart_icon.png" alt="Košarica" href="cart.html">
+                        <li class="nav-r-cart"><a href="cart.html"><img src="./images/cart_icon.png" alt="Košarica"></a>
                         <li><img src="./images/search_icon.png" alt="Search Icon"></li>
                     </ul>
                 </nav>
@@ -43,25 +43,29 @@
                 </section>
 
                 <section id="contact-newsletter">
-                    <h2>Kontaktirajte nas</h2>
+                    <h3>Kontaktirajte nas</h3>
                     <div class="contact-info">
-                        <p>Email: info@beautyshop.com</p>
-                        <p>Telefon: +385 1 234 5678</p>
+                        <p>Email: <a href="mailto:info@beautyshop.com">info@beautyshop.com</a></p>
+                        <p>Telefon: <a href="tel:+38512345678">+385 1 234 5678</a></p>
                         <p>Adresa: Ulica Ljepote 123, 10000 Zagreb, Hrvatska</p>
                     </div>
-                    <h2>Pretplatite se na naš newsletter</h2>
+                    <h3 id="pretplati-se-h3">Pretplatite se na naš newsletter</h3>
                     <div class="newsletter">
-                        <input type="email" placeholder="Unesite vaš email">
-                        <button>Pretplati me</button>
+                        <form onsubmit="alert('Hvala što ste se pretplatili!')" >
+                            <input type="email" name="email" placeholder="Unesite vaš email" required>
+                            <button type="submit">Pretplati me</button>
+                        </form>
                     </div>
                 </section>
             </div>
 
-            <div class="right-column">
+            <div class="hero-image-div">
                 <section id="hero">
                     <img src="./images/store1.jpg" alt="Hero Image" class="hero-image" id="hero-image">
                 </section>
-
+            </div>
+            
+            <div class="products-div">
                 <section id="products">
                     <div class="product-container">
                         <!-- Proizvodi će se puniti iz JS-a -->

@@ -74,6 +74,32 @@
         margin-left: 5px;
     }
 
+    .main-container {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: auto auto;
+        padding: 20px;
+    }
+    
+    .left-column {
+        grid-column: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding-right: 20px;
+    }
+
+    .hero-image-div {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 1;
+        margin-bottom: 10px;
+    }
+    
+    .product-div {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
     .product {
         width: 47%;
     }
@@ -86,16 +112,56 @@
         font-size: 2.1vw;
     }
 
-    .left-column {
-        width: 25%;
-    }
-    
-    .right-column {
-        width: 75%;
-    }
-
     .category-button {
         font-size: min(3.1vw, 16px);
+    }
+
+    #contact-newsletter {
+        background-color: #f9f9f9;
+        border: #333;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+    }
+
+    #contact-newsletter h3{
+        font-size: min(2vw,16px);
+        margin-bottom: 5px;
+    }
+    
+    #contact-newsletter .contact-info p {
+        font-size: min(1.5vw,12px);
+        color: #555;
+        margin: 5px 0;
+    }
+
+    #pretplati-se-h3 {
+        margin-top: 5px;
+    }
+
+    #contact-newsletter .newsletter form {
+        margin-top: 5px;
+    }
+
+    #contact-newsletter .newsletter input[type="email"] {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1.5vw;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    #contact-newsletter .newsletter button {
+        padding: 5px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 2.2vw;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
     }
     
 }
